@@ -110,9 +110,7 @@
 /////Написать свою функцию bind//////
 function bind(context, fn) {
   return function (...args) {
-    console.log(args);
     fn.apply(context, args);
-    console.log(args);
   };
 }
 function logPerson() {
